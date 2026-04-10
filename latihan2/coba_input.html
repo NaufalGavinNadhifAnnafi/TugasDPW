@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coba Input</title>
+</head>
+<body>
+
+<h2>Percobaan Radio Button</h2>
+
+<form>
+    <p>Pilih Jenis Kelamin:</p>
+    
+    <input type="radio" name="jk" value="Laki-laki"> Laki-laki <br>
+    <input type="radio" name="jk" value="Perempuan"> Perempuan <br>
+</form>
+
+<p>
+Kesimpulan: Jika atribut name sama, maka hanya satu pilihan yang bisa dipilih dalam satu grup radio button.
+</p>
+
+</body>
+</html>
+
+<h2>Percobaan Checkbox</h2>
+
+<form>
+    <p>Pilih Hobi:</p>
+
+    <input type="checkbox" name="hobi" value="Membaca"> Membaca <br>
+    <input type="checkbox" name="hobi" value="Olahraga"> Olahraga <br>
+</form>
+
+<p>
+Kesimpulan: Checkbox tetap bisa dipilih lebih dari satu meskipun memiliki atribut name yang sama.
+</p>
+
+<h2>Percobaan Input Type Lain</h2>
+
+<form>
+    Nama: <input type="text"><br><br>
+    Password: <input type="password"><br><br>
+    Email: <input type="email"><br><br>
+    Tanggal Lahir: <input type="date"><br><br>
+    Umur: <input type="number"><br><br>
+</form>
+
+<p>
+Kesimpulan: Setiap type pada input memiliki fungsi yang berbeda. 
+Type email akan memvalidasi format email, type password menyembunyikan teks, 
+type date menampilkan pemilih tanggal, dan type number hanya menerima angka.
+</p>
+
+<h2>Percobaan Input Range</h2>
+
+<form>
+    Nilai Volume:
+    <input type="range" min="0" max="100" value="50">
+</form>
+
+<p>
+Kesimpulan: Input type range digunakan untuk memilih nilai dalam rentang tertentu.
+Nilai minimum adalah 0 dan maksimum 100.
+</p>
+
+<h2>Percobaan Datalist</h2>
+
+<form>
+    Pilih Kota:
+    <input list="kota">
+    
+    <datalist id="kota">
+        <option value="Jakarta">
+        <option value="Bandung">
+        <option value="Surabaya">
+        <option value="Medan">
+        <option value="Yogyakarta">
+    </datalist>
+</form>
+
+<p>
+Kesimpulan: Elemen datalist memberikan saran pilihan saat pengguna mengetik.
+Pengguna tetap bisa mengetik manual selain dari daftar yang tersedia.
+</p>
+
+<h2>Percobaan Output</h2>
+
+<form oninput="hasil.value=parseInt(a.value)+parseInt(b.value)">
+    Nilai A: <input type="number" id="a" value="0">
+    +
+    Nilai B: <input type="number" id="b" value="0">
+    =
+    <output name="hasil"></output>
+</form>
+
+<p>
+Kesimpulan: Elemen output digunakan untuk menampilkan hasil perhitungan secara langsung berdasarkan input pengguna.
+</p>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout 3</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .item1 {
+            grid-row: 1 / 4;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>Grid Row & Column</h2>
+
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+
+<br>
+<p>Kesimpulan skenario 1: Properti grid-row membuat elemen memanjang ke beberapa baris.</p>
+
+<p>Kesimpulan skenario 2: Properti grid-column membuat elemen memanjang ke beberapa kolom.</p>
+
+</body>
+</html>

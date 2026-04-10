@@ -1,0 +1,18 @@
+header{
+background-color: lightblue;
+text-align: center;
+padding: 20px;
+}
+.sidebar{
+width:200px;
+background:#ccc;
+height:100vh;
+padding:20px;
+position:fixed;
+}
+
+.sidebar a{
+display:block;
+margin:10px 0;
+font-size:18px;
+}
