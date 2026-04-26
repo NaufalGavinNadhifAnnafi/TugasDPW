@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <title>Latihan 2.2</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        #header {
+            background-color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+        #link {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+        #content {
+            padding: 15px;
+            min-height: 200px;
+        }
+        #footer {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+    <title>Latihan 2.2</title>
+</head>
+<body>
+
+<div id="header">
+    <h1>Website Pribadi</h1>
+</div>
+
+<div id="link">
+    <a href="#">Home</a> |
+    <a href="#">Profil</a> |
+    <a href="#">Kontak</a>
+</div><div id="content">
+
+<h2>Form Pendaftaran Mahasiswa</h2>
+
+<form action="proses.php" method="post">
+
+Nama Lengkap:<br>
+<input type="text" name="nama"><br><br>
+
+Tempat Lahir:<br>
+<input type="text" name="tempat_lahir"><br><br>
+
+Tanggal Lahir (DD-MM-YYYY):<br>
+<input type="date" name="tanggal_lahir" min="1989-01-01" max="1994-12-31"><br><br>
+
+Agama:<br>
+<select name="agama">
+    <option>Islam</option>
+    <option>Kristen</option>
+    <option>Katolik</option>
+    <option>Hindu</option>
+    <option>Budha</option>
+    <option>Konghucu</option>
+</select><br><br>
+
+Jurusan:<br>
+<select name="jurusan">
+    <option>Komputerisasi Akuntansi</option>
+    <option>Administrasi Bisnis</option>
+    <option>Teknik Komputer Kontrol</option>
+    <option>Teknik Listrik</option>
+    <option>Mesin Otomotif</option>
+    <option>Perkeretaapian</option>
+    <option>Teknologi Informasi</option>
+    <option>Akuntansi</option>
+</select><br><br>
+
+<input type="submit" value="DAFTAR">
+<input type="reset" value="BATAL">
+
+</form>
+
+</div>
+<div id="footer">
+    <p><i>copyright@gavinadhif00_2533070502025</i></p>
+</div>
+
+</body>
+</html>

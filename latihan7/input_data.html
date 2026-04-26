@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Input Data</title>
+</head>
+<body>
+
+    <h2>Program Input Data JavaScript</h2>
+    <button onclick="inputNama()">Masukkan Nama</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function inputNama() {
+            var nama = prompt("Masukkan nama kamu:");
+
+            if (nama != null && nama != "") {
+                document.getElementById("hasil").innerHTML = "Halo, " + nama + "!";
+            } else {
+                document.getElementById("hasil").innerHTML = "Kamu belum memasukkan nama.";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout 2</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto; /* bisa diubah sesuai skenario */
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Grid Layout 2</h2>
+
+<div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+
+<br>
+
+<p>Kesimpulan skenario 1: Perubahan jumlah kolom pada grid akan mempengaruhi tata letak elemen.</p>
+
+<p>Kesimpulan skenario 2: Nilai grid-template-columns seperti auto, px, atau kombinasi dapat mengatur lebar kolom secara fleksibel.</p>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .wadah-flex {
+            display: flex;
+            background-color: lightblue;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+
+        .wadah-flex div {
+            background-color: coral;
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Flexbox</h2>
+
+<div class="wadah-flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+
+<br>
+
+<p>Kesimpulan skenario 1: Flexbox digunakan untuk mengatur layout dalam satu arah (baris atau kolom).</p>
+
+<p>Kesimpulan skenario 2: Elemen dalam flexbox dapat diatur ukuran dan posisinya dengan fleksibel.</p>
+
+<p>Kesimpulan skenario 3: justify-content mengatur posisi horizontal elemen.</p>
+
+<p>Kesimpulan skenario 4: Perubahan properti flex dapat mengubah susunan elemen.</p>
+
+<p>Kesimpulan skenario 5: flex-wrap membuat elemen pindah ke baris baru jika tidak cukup ruang.</p>
+
+<p>Kesimpulan skenario 6: align-items mengatur posisi vertikal elemen.</p>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Confirm Box</title>
+</head>
+<body>
+
+    <h2>Program Confirm Box JavaScript</h2>
+    <button onclick="konfirmasi()">Klik Aku</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function konfirmasi() {
+            var hasil = confirm("Apakah kamu yakin ingin melanjutkan?");
+
+            if (hasil) {
+                document.getElementById("hasil").innerHTML = "Kamu memilih OK";
+            } else {
+                document.getElementById("hasil").innerHTML = "Kamu memilih Cancel";
+            }
+        }
+    </script>
+
+</body>
+</html>

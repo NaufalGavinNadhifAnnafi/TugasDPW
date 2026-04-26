@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Radio Box</title>
+</head>
+<body>
+
+    <h2>Pilih Jenis Kelamin</h2>
+
+    <input type="radio" name="jk" value="Laki-laki"> Laki-laki<br>
+    <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+
+    <button onclick="cekPilihan()">Kirim</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function cekPilihan() {
+            var pilihan = document.getElementsByName("jk");
+            var hasil = "";
+
+            for (var i = 0; i < pilihan.length; i++) {
+                if (pilihan[i].checked) {
+                    hasil = pilihan[i].value;
+                }
+            }
+
+            if (hasil == "") {
+                document.getElementById("hasil").innerHTML = "Kamu belum memilih!";
+            } else {
+                document.getElementById("hasil").innerHTML = "Pilihan kamu: " + hasil;
+            }
+        }
+    </script>
+
+</body>
+</html>

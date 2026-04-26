@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Praktikum HTML5 Lanjut">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum HTML5 Lanjut</title>
+     <style>
+        
+        * { box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+        header { background-color: #666; padding: 30px; text-align: center; font-size: 35px; color: white; }
+        nav { float: left; width: 30%; min-height: 450px; background: #ccc; padding: 20px; }
+        article { float: left; padding: 20px; width: 70%; background-color: #f1f1f1; min-height: 450px; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { margin-bottom: 10px; }
+        section::after { content: ""; display: table; clear: both; }
+        footer { background-color: #777; padding: 10px; text-align: center; color: white; }
+
+        .container-gambar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .container-gambar img {
+            width: 100%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praktikum HTML5 Advance</h1>
+</header>
+
+<section>
+<section>
+ <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+    </nav>
+<article>
+<h2>Galeri Gambar dengan Mouse Event</h2>
+
+<figure>
+    <img src="foto event/IMG_3086.JPG" width="300"
+         onmouseover="this.style.opacity='0.5'"
+         onmouseout="this.style.opacity='1'"
+         alt="Gambar 1">
+    <figcaption>Gambar akan redup saat disentuh mouse</figcaption>
+</figure>
+
+<figure>
+    <img src="foto event/IMG_3088.JPG" width="300"
+         onclick="alert('Kamu mengklik gambar 2!')"
+         alt="Gambar 2">
+    <figcaption>Klik gambar untuk menampilkan pesan</figcaption>
+</figure>
+
+<figure>
+    <img src="foto event/IMG_3098.JPG" width="300"
+         onmouseover="this.style.transform='scale(1.1)'"
+         onmouseout="this.style.transform='scale(1)'"
+         alt="Gambar 3">
+    <figcaption>Gambar membesar saat mouse diarahkan</figcaption>
+</figure>
+
+</article>
+
+</section>
+</section>
+
+<footer>
+    <p><b>Nama:</b> Naufal Gavin Nadhif Annafi</p>
+    <p><b>NIM:</b> 253307050</p>
+    <p><i>Mouse event seperti onmouseover, onmouseout, dan onclick 
+digunakan untuk memberikan interaksi pada gambar atau elemen HTML.
+Dengan event ini, halaman web menjadi lebih dinamis dan interaktif..</i></p>
+</footer>
+
+</body>
+</html>
