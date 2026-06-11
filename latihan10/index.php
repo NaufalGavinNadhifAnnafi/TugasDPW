@@ -2,12 +2,12 @@
 require_once ('kelas/manusia.php');
 
 $andi = new manusia();
-$andi->setNama("Deta Aprilka Dario Karnavaro");
+$andi->setNama("Naufal Gavin Nadhif Annafi");
 $andi->setUmur(20);
 
 $budi = new manusia();
-$budi->setNama("Gavin Naufal");
-$budi->setUmur(22);
+$budi->setNama("aprilka deta");
+$budi->setUmur(24);
 
 echo "Identitas Budi:<br>";
 echo "Nama: " . $budi->getNama() . "<br>";

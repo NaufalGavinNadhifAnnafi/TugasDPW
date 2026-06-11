@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/kelas/mahasiswa.php';
 
-$mhs = new mahasiswa("Deta Aprilka Dario Karnavaro");
-$mhs->setNIM("253307051");
+$mhs = new mahasiswa("Naufal Gavin Nadhif Annafi");
+$mhs->setNIM("253307050");
 $mhs->setJurusan("Teknologi Informasi");
 $mhs->setKelas("2B");
 

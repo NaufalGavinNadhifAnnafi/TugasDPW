@@ -9,7 +9,6 @@ class mahasiswa extends manusia
 
     public function __construct($nama)
     {
-        // kita bisa langsung manfaatkan fungsi dari kelas Manusia.php
         $this->setNama($nama);
     }
 

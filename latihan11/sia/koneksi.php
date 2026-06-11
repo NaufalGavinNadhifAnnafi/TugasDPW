@@ -1,13 +1,7 @@
 <?php
-$host  = "localhost";
-$user  = "root";
-$paswd = "";
-$name  = "db_praktikum";
-
-$link = mysqli_connect($host, $user, $paswd, $name);
+$link = mysqli_connect("127.0.0.1", "root", "", "db_praktikum");
 
 if (!$link) {
-    die("Koneksi dengan database gagal: " . mysqli_connect_errno() .
-        " - " . mysqli_connect_error());
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
